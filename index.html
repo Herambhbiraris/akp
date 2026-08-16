@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="A.K Properties Nashik - Nashik's trusted real estate agency. Buy, rent, or sell residential properties, flats, row houses, and lands in Pathardi Phata, Indira Nagar, and across Nashik.">
+    <meta name="keywords" content="Real Estate Nashik, Flats in Nashik, Row House Pathardi Phata, Rent Apartments Indira Nagar, A.K Properties Nashik, Property Agent Nashik">
+    <meta name="author" content="A.K Properties Nashik">
+    <title>A.K Properties Nashik | Home</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="page-home">
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">A.K</span> Properties
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link active">Home</a>
+                <a href="properties.html" class="nav-link">Properties</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <!-- Light Mode Sun SVG -->
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                    <!-- Dark Mode Moon SVG -->
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+                <a href="tel:+918169633015" class="cta-btn text-cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>+91 8169633015</span>
+                </a>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section" id="home">
+        <div class="hero-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content">
+                <span class="badge hero-badge">Nashik's Premier Property Agent</span>
+                <h1 class="hero-title">Search Your Next Perfect Home</h1>
+                <p class="hero-description">Find new & featured properties located in Nashik's prime locations. Pathardi Phata, Indira Nagar, and more.</p>
+            </div>
+
+            <!-- Search Panel -->
+            <div class="search-panel">
+                <form id="search-form" class="search-form" action="properties.html" method="GET">
+                    <div class="search-field">
+                        <label for="search-location">City / Location</label>
+                        <select name="location" id="search-location">
+                            <option value="all">All Locations</option>
+                            <option value="pathardi phata">Pathardi Phata</option>
+                            <option value="indira nagar">Indira Nagar</option>
+                            <option value="damodar circle">Damodar Circle</option>
+                        </select>
+                    </div>
+                    
+                    <div class="search-field">
+                        <label for="search-type">Property Type</label>
+                        <select name="type" id="search-type">
+                            <option value="all">All Types</option>
+                            <option value="apartment">Apartment</option>
+                            <option value="row house">Row House</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <label for="search-category">Status</label>
+                        <select name="category" id="search-category">
+                            <option value="all">Rent & Buy</option>
+                            <option value="for rent">For Rent</option>
+                            <option value="for sale">For Sale</option>
+                        </select>
+                    </div>
+
+                    <div class="search-field">
+                        <label for="search-price">Max Budget</label>
+                        <select name="price" id="search-price">
+                            <option value="all">Any Budget</option>
+                            <option value="8000">Under Rs. 8,000</option>
+                            <option value="11000">Under Rs. 11,000</option>
+                            <option value="15000">Under Rs. 15,000</option>
+                        </select>
+                    </div>
+
+                    <button type="submit" class="search-btn">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><path d="m21 21-4.3-4.3"/></svg>
+                        <span>Search</span>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="stats-section">
+        <div class="container stats-container">
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="8">8+</h3>
+                <p class="stat-label">Years of Trust</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="500">500+</h3>
+                <p class="stat-label">Happy Clients</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="300">300+</h3>
+                <p class="stat-label">Managed Properties</p>
+            </div>
+            <div class="stat-card">
+                <h3 class="stat-number" data-target="15">15+</h3>
+                <p class="stat-label">Industry Awards</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Property Types</span>
+                <h2 class="section-title">Explore by Category</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="categories-grid">
+                <div class="category-card" onclick="location.href='properties.html?type=apartment'">
+                    <div class="category-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 21h18M3 7v14M21 7v14M16 3H8a2 2 0 0 0-2 2v2h12V5a2 2 0 0 0-2-2zM10 11h4M10 16h4"/></svg>
+                    </div>
+                    <h3 class="category-name">Apartments & Flats</h3>
+                    <span class="category-count">300 Listings</span>
+                </div>
+                <div class="category-card" onclick="location.href='properties.html?type=row+house'">
+                    <div class="category-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+                    </div>
+                    <h3 class="category-name">Row Houses</h3>
+                    <span class="category-count">155 Listings</span>
+                </div>
+                <div class="category-card" onclick="location.href='properties.html'">
+                    <div class="category-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><line x1="9" y1="3" x2="9" y2="21"/><line x1="15" y1="3" x2="15" y2="21"/><line x1="3" y1="9" x2="21" y2="9"/><line x1="3" y1="15" x2="21" y2="15"/></svg>
+                    </div>
+                    <h3 class="category-name">Plots & Lands</h3>
+                    <span class="category-count">80 Listings</span>
+                </div>
+                <div class="category-card" onclick="location.href='properties.html'">
+                    <div class="category-icon-wrapper">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/><circle cx="12" cy="7" r="4"/></svg>
+                    </div>
+                    <h3 class="category-name">Office & Showrooms</h3>
+                    <span class="category-count">80 Listings</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Recent Listings Preview -->
+    <section class="properties-section">
+        <div class="container">
+            <div class="section-header-flex">
+                <div>
+                    <span class="section-subtitle">Our Portfolios</span>
+                    <h2 class="section-title">Featured Properties</h2>
+                </div>
+                <a href="properties.html" class="btn btn-outline">View All Listings</a>
+            </div>
+            
+            <div class="properties-grid" id="featured-properties-grid">
+                <!-- Will be dynamically populated with first 3 properties via JS -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Snippet -->
+    <section class="about-section" style="border-top: 1px solid var(--border-color);">
+        <div class="container about-container">
+            <div class="about-image-side">
+                <div class="about-img-box">
+                    <img src="images/prop_rowhouse.jpg" alt="Rowhouse exterior" class="about-img animate-on-scroll">
+                    <div class="experience-badge animate-on-scroll">
+                        <span class="exp-years">8+</span>
+                        <span class="exp-text">Years of Excellence</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="about-content-side">
+                <span class="section-subtitle">Who We Are?</span>
+                <h2 class="section-title">Our Agency Story</h2>
+                <div class="divider"></div>
+                <p class="about-paragraph">
+                    For the past 8 years, <strong>A.K Properties</strong> has been a cornerstone in the real estate industry in Nashik, dedicated to facilitating seamless transactions in buying, selling, and renting properties. Our commitment to customer satisfaction has positioned us as a trusted partner.
+                </p>
+                <a href="about.html" class="btn btn-secondary" style="margin-top: 16px;">Read Full Story</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Preview Section -->
+    <section class="services-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Our Expertise</span>
+                <h2 class="section-title">What We Do</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="services-grid">
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="m2 22 1-1h3l9-9M2 22v-3l13-13M22 6l-4 4-2-2 4-4Z"/><path d="m11 8 4 4"/></svg>
+                    </div>
+                    <h3>Property Buy & Sell</h3>
+                    <p>Facilitating seamless transactions for apartments, row houses, and agricultural land in Nashik.</p>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    </div>
+                    <h3>Rental Management</h3>
+                    <p>Connecting verified tenants with homeowners. Managing agreements and rent collection protocols.</p>
+                </div>
+                
+                <div class="service-card animate-on-scroll">
+                    <div class="service-icon">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/><line x1="16" y1="13" x2="8" y2="13"/><line x1="16" y1="17" x2="8" y2="17"/></svg>
+                    </div>
+                    <h3>Legal Documentation</h3>
+                    <p>End-to-end support for property registration, search reports, and legal paperwork execution.</p>
+                </div>
+            </div>
+            
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="services.html" class="btn btn-outline">Explore All Services</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section">
+        <div class="container">
+            <div class="section-header">
+                <span class="section-subtitle">Reviews</span>
+                <h2 class="section-title">What Our Clients Say</h2>
+                <div class="divider"></div>
+            </div>
+            
+            <div class="testimonials-carousel-wrapper">
+                <div class="testimonials-carousel" id="testimonials-carousel">
+                    <div class="testimonial-slide active">
+                        <div class="testimonial-rating">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"Finding a rental home at Pathardi Phata was an extremely smooth process with A.K Properties. They showed us multiple options and handled the rental agreement registry seamlessly. Highly recommended!"</p>
+                        <h4 class="testimonial-author">Prasad Kulkarni</h4>
+                        <span class="testimonial-role">Tenant, Greenville</span>
+                    </div>
+                    <div class="testimonial-slide">
+                        <div class="testimonial-rating">
+                            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+                        </div>
+                        <p class="testimonial-text">"I sold my 2 BHK Row House in Indira Nagar within just two months. A.K Properties brought highly interested buyers and closed the sale at a premium price. Excellent documentation support."</p>
+                        <h4 class="testimonial-author">Sneha Shinde</h4>
+                        <span class="testimonial-role">Owner, Indira Nagar</span>
+                    </div>
+                </div>
+                
+                <div class="carousel-dots" id="carousel-dots">
+                    <span class="carousel-dot active" data-index="0"></span>
+                    <span class="carousel-dot" data-index="1"></span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action -->
+    <section class="cta-section">
+        <div class="cta-gradient-overlay"></div>
+        <div class="container cta-container">
+            <div class="cta-content">
+                <h2>Do You Have Questions?</h2>
+                <p>We are available to answer your property related queries and offer support anytime.</p>
+            </div>
+            <div class="cta-actions">
+                <a href="contact.html" class="btn btn-white">Contact Us Today</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo"><span class="logo-accent">A.K</span> Properties</a>
+                <p class="footer-desc">Providing transparent, trusted real estate consultancy and listing services in Nashik for more than 8 years.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                    <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="properties.html">Properties</a>
+                    <a href="about.html">About Agency</a>
+                    <a href="services.html">Our Services</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Popular Areas</h4>
+                <div class="footer-links">
+                    <a href="properties.html?location=pathardi+phata">Pathardi Phata</a>
+                    <a href="properties.html?location=indira+nagar">Indira Nagar</a>
+                    <a href="properties.html?location=damodar+circle">Damodar Circle</a>
+                    <a href="properties.html">All Nashik</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <span>&copy; 2026 A.K Properties Nashik. All Rights Reserved.</span>
+                <span>Designed with Premium Styling</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Property Details Modal (for featured previews) -->
+    <div class="modal" id="details-modal" aria-hidden="true" role="dialog">
+        <div class="modal-overlay" id="modal-overlay"></div>
+        <div class="modal-card">
+            <button class="modal-close-btn" id="modal-close-btn" aria-label="Close Modal">&times;</button>
+            <div class="modal-header">
+                <span class="modal-badge" id="modal-badge">For Rent</span>
+                <h3 class="modal-title" id="modal-title"></h3>
+                <div class="modal-location" id="modal-location">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                    <span></span>
+                </div>
+            </div>
+            <div class="modal-body">
+                <img src="" alt="" class="modal-image" id="modal-image">
+                <div class="modal-specs">
+                    <div class="spec-box"><span class="spec-label">Price</span><span class="spec-val" id="modal-price"></span></div>
+                    <div class="spec-box"><span class="spec-label">Type</span><span class="spec-val" id="modal-type"></span></div>
+                    <div class="spec-box"><span class="spec-label">Configuration</span><span class="spec-val" id="modal-bhk"></span></div>
+                    <div class="spec-box"><span class="spec-label">Area</span><span class="spec-val" id="modal-size"></span></div>
+                </div>
+                <div class="modal-description-box">
+                    <h4>Description</h4>
+                    <p id="modal-description"></p>
+                </div>
+                <div class="modal-agent-box">
+                    <div class="agent-avatar">AK</div>
+                    <div class="agent-info">
+                        <h4>A.K Properties Agent</h4>
+                        <p>Nashik Branch Consultant</p>
+                    </div>
+                    <div class="agent-phone">+91 8169633015</div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <a href="tel:+918169633015" class="btn btn-secondary">Call Now</a>
+                <a href="" target="_blank" rel="noopener" class="btn btn-whatsapp" id="modal-whatsapp-btn">WhatsApp Chat</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>

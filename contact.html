@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Get in touch with A.K Properties Nashik. Phone calls, emails, office address, and contact form for properties support.">
+    <title>Contact Us | A.K Properties Nashik</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=Outfit:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="styles/main.css">
+</head>
+<body class="page-contact">
+
+    <!-- Header Navigation -->
+    <header class="header" id="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <span class="logo-accent">A.K</span> Properties
+            </a>
+            
+            <nav class="nav-menu" id="nav-menu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="properties.html" class="nav-link">Properties</a>
+                <a href="about.html" class="nav-link">About</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="contact.html" class="nav-link active">Contact</a>
+            </nav>
+            
+            <div class="header-actions">
+                <button class="theme-toggle" id="theme-toggle" aria-label="Toggle Theme">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"/></svg>
+                </button>
+                <a href="tel:+918169633015" class="cta-btn text-cta">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>+91 8169633015</span>
+                </a>
+                <button class="mobile-nav-toggle" id="mobile-nav-toggle" aria-label="Toggle Menu">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Inner Page Banner -->
+    <section class="inner-banner">
+        <div class="inner-banner-overlay"></div>
+        <div class="container inner-banner-container">
+            <span class="badge hero-badge">Get Helps & Friendly Support</span>
+            <h1 class="inner-banner-title">Contact Us</h1>
+        </div>
+    </section>
+
+    <!-- Contact & Map Section -->
+    <section class="contact-section" style="background-color: var(--bg-primary);">
+        <div class="container contact-container">
+            <!-- Form Card -->
+            <div class="contact-form-card">
+                <span class="section-subtitle">Reach Out Today</span>
+                <h3 class="card-title">Fill Up The Form</h3>
+                
+                <form id="contact-form" class="contact-form" novalidate>
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="form-name">Name</label>
+                            <input type="text" id="form-name" placeholder="Your Name" required>
+                            <span class="error-msg">Name is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-email">Email</label>
+                            <input type="email" id="form-email" placeholder="Your Email" required>
+                            <span class="error-msg">Valid email is required</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="form-phone">Phone Number</label>
+                            <input type="tel" id="form-phone" placeholder="Phone (e.g. +91 9876543210)" required>
+                            <span class="error-msg">Valid phone number is required</span>
+                        </div>
+                        <div class="form-group">
+                            <label for="form-subject">Subject</label>
+                            <input type="text" id="form-subject" placeholder="Interested Property / Services" required>
+                            <span class="error-msg">Subject is required</span>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="form-message">Message</label>
+                        <textarea id="form-message" rows="5" placeholder="Tell us about your property requirement..." required></textarea>
+                        <span class="error-msg">Message is required</span>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary btn-block submit-btn" id="submit-btn">
+                        <span>Submit Request</span>
+                    </button>
+                    
+                    <div class="form-status" id="form-status"></div>
+                </form>
+            </div>
+            
+            <!-- Info Card -->
+            <div class="contact-info-card">
+                <div class="info-block">
+                    <span class="section-subtitle">Direct Contact Details</span>
+                    <h3 class="card-title">Office Location</h3>
+                    <p class="info-desc font-accent">A.K Properties, Nashik, Maharashtra, India.</p>
+                </div>
+                
+                <div class="contact-details-list">
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        </div>
+                        <div>
+                            <h4>Address</h4>
+                            <p>Pathardi Phata, Indira Nagar Area, Nashik - 422009</p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        </div>
+                        <div>
+                            <h4>Phone Calls</h4>
+                            <p><a href="tel:+918169633015" class="info-link">+91 8169633015</a></p>
+                        </div>
+                    </div>
+                    
+                    <div class="detail-item">
+                        <div class="detail-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+                        </div>
+                        <div>
+                            <h4>Inquiries Email</h4>
+                            <p><a href="mailto:disojakaran@gmail.com" class="info-link">disojakaran@gmail.com</a></p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Mock Map visualizer -->
+                <div class="map-mock-box">
+                    <div class="map-overlay">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" class="map-pin-icon"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        <h4>A.K Properties, Nashik</h4>
+                        <p>Nashik - Pune Expressway Corridor</p>
+                        <a href="https://maps.google.com/?q=Pathardi+Phata,Nashik" target="_blank" rel="noopener" class="btn btn-xs btn-white">Open in Maps</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-container">
+            <div class="footer-brand">
+                <a href="index.html" class="footer-logo"><span class="logo-accent">A.K</span> Properties</a>
+                <p class="footer-desc">Providing transparent, trusted real estate consultancy and listing services in Nashik for more than 8 years.</p>
+                <div class="social-links">
+                    <a href="https://facebook.com" aria-label="Facebook" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg></a>
+                    <a href="https://twitter.com" aria-label="Twitter" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"/></svg></a>
+                    <a href="https://instagram.com" aria-label="Instagram" target="_blank" rel="noopener"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg></a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Quick Links</h4>
+                <div class="footer-links">
+                    <a href="index.html">Home</a>
+                    <a href="properties.html">Properties</a>
+                    <a href="about.html">About Agency</a>
+                    <a href="services.html">Our Services</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+            </div>
+            
+            <div class="footer-column">
+                <h4>Popular Areas</h4>
+                <div class="footer-links">
+                    <a href="properties.html?location=pathardi+phata">Pathardi Phata</a>
+                    <a href="properties.html?location=indira+nagar">Indira Nagar</a>
+                    <a href="properties.html?location=damodar+circle">Damodar Circle</a>
+                    <a href="properties.html">All Nashik</a>
+                </div>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <div class="container footer-bottom-container">
+                <span>&copy; 2026 A.K Properties Nashik. All Rights Reserved.</span>
+                <span>Designed with Premium Styling</span>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Link JS -->
+    <script src="js/app.js"></script>
+</body>
+</html>
